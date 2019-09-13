@@ -8,7 +8,7 @@ let state = {
 // UI components, mapping props (data) to UI (React elements)
 function UI(props) {
 	return (
-		<>
+		<> // These empty brackets are called "fragments"
 			<SearchBox query={props.query} onChange={doSearch} />
 			{props.loading && <LoadingPlaceholder query={props.query} />}
 			{props.results && <DomainsList domains={props.results} />}

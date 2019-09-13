@@ -1,3 +1,4 @@
+// Compared to the script in the previous version, this script introduces React for improved rendering
 // application state object
 let state = {
 	loading: false,
@@ -6,6 +7,7 @@ let state = {
 };
 
 // UI components, mapping props (data) to UI (React elements)
+// No longer returning strings. Instead, returning React elements.
 function UI(props) {
 	return [
 		React.createElement(SearchBox, { query: props.query, onChange: doSearch }),

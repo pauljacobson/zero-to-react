@@ -68,7 +68,7 @@ function htmlstring(ui) {
 function render() {
 	const container = document.querySelector('main');
 	const ui = UI(state);
-	container.innerHTML = htmlstring(ui);
+	container.innerHTML = htmlstring(ui); // Converting the state object to an HTML string
 }
 
 function setState(newState) {
